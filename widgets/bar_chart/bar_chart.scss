@@ -4,16 +4,16 @@
 $background-color:  #fff;
 
 $title-color:       rgba(255, 255, 255, 0.7);
-$moreinfo-color:    #9aca3c;
-$updateat-color:    rgba(255, 255, 255, 1);
+$moreinfo-color:    rgba(123, 39, 77, 0.7);
+$updateat-color:    rgba(123, 39, 77, 0.7);
 
 // If you want the title at the top, set the position to 'top'
-$title-position:    top;
+$title-position:    bottom;
 
 // ----------------------------------------------------------------------------
-// Widget-pie-chart styles
+// Widget-bar-chart styles
 // ----------------------------------------------------------------------------
-.widget-pie-chart {
+.widget-bar-chart {
 
   background-color: $background-color;
 
@@ -33,8 +33,8 @@ $title-position:    top;
   }
 
   .more-info {
-    font-size: 20px;
     color: $moreinfo-color;
+    font-size: 20px;
     font-weight: bold;
   }
 
