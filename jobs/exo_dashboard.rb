@@ -39,6 +39,7 @@ SCHEDULER.every '5s' do
   send_event('piechart', { labels: labels, datasets: data, options: options })
   send_event('sales_total', { value: percentage.round, moreinfo: "$#{value_at_now}: #{percentage.round}%" })
   send_event('total_atl_bookings', { value: percent.round, moreinfo: "$#{atl_at_now}: #{percent.round}%" })
-  send_event('all_users', { current: users.size.next})
+  send_event('enrolled_students', { current: users.size.next})
+  send_event('all_users', { current: 8000})
   send_event('student_breakdown',  { items:  list})
 end

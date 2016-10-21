@@ -4,13 +4,22 @@
 $background-color:  #12b0c5;
 $value-color:       #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);
+$title-color:       #fff;
 $label-color:       rgba(255, 255, 255, 0.7);
 $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
 // Widget-list styles
 // ----------------------------------------------------------------------------
+
+.todo_list {
+  li {
+    font-size: 9px;
+    color: $value-color;
+    font-weight: bold;
+  }
+}
+
 .widget-list {
 
   background-color: $background-color;
@@ -18,12 +27,13 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .title {
     color: $title-color;
+    font-weight: bold;
   }
 
   ol, ul {
-    margin: 0 15px;
+    margin: 0 10px;
     text-align: left;
-    color: $label-color;
+    color: $value-color;
     font-size: 16px;
   }
 
@@ -46,7 +56,6 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   .value {
     float: right;
     margin-left: 12px;
-    font-weight: 600;
     color: $value-color;
   }
 

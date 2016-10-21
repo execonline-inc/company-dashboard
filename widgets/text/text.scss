@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------------------
 $background-color:  #ec663c;
 
-$title-color:       rgba(255, 255, 255, 0.7);
+$title-color:       #fff;
 $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 $blue: blue;
@@ -13,9 +13,10 @@ $blue: blue;
 .widget-text {
 
   background-color: $background-color;
-
   .title {
     color: $title-color;
+    font-size: 50px;
+    font-weight: bold;
   }
 
   .more-info {
@@ -34,3 +35,4 @@ $blue: blue;
 .props {
   background-color: $blue
 }
+
