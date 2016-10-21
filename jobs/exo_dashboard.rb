@@ -1,6 +1,6 @@
 
 require 'csv'
-users = CSV.read('../execonline_hackathon/students.csv')
+users = CSV.read('./students.csv')
 
 labels = [ 'In Dev', 'In QA', 'Recent To Prod' ]
 
@@ -30,7 +30,7 @@ atl_at_now = 500
 percent = (atl_at_now/atl_goal) * 100
 
 list = []
-CSV.foreach("../execonline_hackathon/current_users.csv", :headers => true) do |row|
+CSV.foreach("./current_users.csv", :headers => true) do |row|
   list.push({:label => row[0], :value => row[3]})
 end
 
