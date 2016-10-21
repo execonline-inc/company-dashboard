@@ -176,6 +176,7 @@ PLATFORMS
 DEPENDENCIES
   dashing
   dashing-contrib
+  httparty
   twitter (>= 5.9.0)
 
 BUNDLED WITH

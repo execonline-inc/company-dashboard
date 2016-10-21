@@ -1,4 +1,4 @@
-class Dashing.PieChart extends Dashing.Widget
+class Dashing.DoughnutChart extends Dashing.Widget
 
   ready: ->
     # Margins: zero if not set or the same as the opposite margin
@@ -26,18 +26,21 @@ class Dashing.PieChart extends Dashing.Widget
     @ctx = $(@node).find('.chart-area')[0].getContext('2d')
 
     @myChart = new Chart(@ctx, {
-      type: 'pie'
+      type: 'doughnut'
       data: {
         labels: @get('labels')
         datasets: @get('datasets')
       }
       options: $.extend({
         responsive: true
+        scaleShowLabels: true
         maintainAspectRatio: true
         legend: {
           display: true
+          position: 'bottom'
           labels: {
             boxWidth: 12
+            fontColor: "#fff"
           }
         }
       }, @get('options'))
